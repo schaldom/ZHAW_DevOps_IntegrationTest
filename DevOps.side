@@ -1,0 +1,234 @@
+{
+  "id": "245faef6-bfe2-4580-ae87-3f1a3f01fa1d",
+  "version": "2.0",
+  "name": "DevOps",
+  "url": "https://de.wikipedia.org",
+  "tests": [{
+    "id": "305b49f3-9ccc-437d-945e-7040d210aeaa",
+    "name": "WikipediaSearch",
+    "commands": [{
+      "id": "54c08a80-eff1-42d0-aa28-57b272db0775",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Hauptseite",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48cdfe38-e836-4298-8bbd-3ba82e7ece5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "875x813",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c85f76c-d899-4e4b-a830-1b9381bd0983",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3e581a3-8863-4670-b83c-ba521fd45f77",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "devops"
+    }, {
+      "id": "c70a89f7-4a26-46da-a1c6-467d58c9f60c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1260b45a-d3c4-4324-a553-cb70d53a3a1f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=firstHeading",
+      "targets": [],
+      "value": "DevOps"
+    }]
+  }, {
+    "id": "6a60a7c0-0f34-4ca7-96e3-ba82339e93e5",
+    "name": "CryptoETHLast90dPrice",
+    "commands": [{
+      "id": "922d7949-4ef5-4748-84ba-95288ceeec25",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04657aef-2b5e-4bf2-a06b-cbcdbc7f27bb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1499x1007",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e78ef1f8-54a4-46ea-873e-98ae01e65eb0",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "crypto com"
+    }, {
+      "id": "600a2218-5e0c-4c11-9094-3b407ad0713b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "286b3bf8-4b55-4bb3-bd8e-497d3619037d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hlcw0c:nth-child(1) .LC20lb",
+      "targets": [
+        ["css=.hlcw0c:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crypto.com | The Best Place to Buy, Sell, and Pay with ...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dee0cb19-077c-4923-b8e9-5310cb6f7a0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hlcw0c:nth-child(1) .LC20lb",
+      "targets": [
+        ["css=.hlcw0c:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crypto.com | The Best Place to Buy, Sell, and Pay with ...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b2b4e3-253f-4ec6-a6d1-3c7a0f43bb5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-4yytyq > .hoverOpacity",
+      "targets": [
+        ["css=.css-4yytyq > .hoverOpacity", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/div/div/div/div/a/button/h5", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div/div/div/a/button/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Prices')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1283",
+      "windowTimeout": 2000
+    }, {
+      "id": "285ca337-9d2c-4c19-85f7-b7436dbfdee0",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1283}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef821b74-88a6-4d74-a865-afc8032edb4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1nb6p17",
+      "targets": [
+        ["css=.css-1nb6p17", "css:finder"],
+        ["xpath=//div[@id='layout_sticky-header']/div[3]/div/div[2]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e54b4c1-f896-495d-98d2-612e1859f53b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.chakra-input",
+      "targets": [
+        ["css=.chakra-input", "css:finder"],
+        ["xpath=//input[@value='Ether']", "xpath:attributes"],
+        ["xpath=//div[@id='layout_sticky-header']/div[3]/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ether"
+    }, {
+      "id": "6267f99a-5017-4c02-b5f7-4a4dfab1c033",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ethereum-search-result > .css-1944mgb",
+      "targets": [
+        ["css=.ethereum-search-result > .css-1944mgb", "css:finder"],
+        ["xpath=//div[@id='results-container']/ul/li/p", "xpath:idRelative"],
+        ["xpath=//li/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Ethereum')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5907e16-3107-4111-a0ed-9162b51dc8c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.coin-chart__date-range_90d",
+      "targets": [
+        ["css=.coin-chart__date-range_90d", "css:finder"],
+        ["xpath=//div[@id='tabs-50--tabpanel-0']/div/div/div/p[5]", "xpath:idRelative"],
+        ["xpath=//p[5]", "xpath:position"],
+        ["xpath=//p[contains(.,'3M')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da5c29b8-f14f-4a83-be93-4fbfc17ff8c3",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Ethereum Price | ETH Price, USD converter, Charts | Crypto.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fa6f024-7542-43eb-88c6-9eb9b2cc491e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.css-1i4zdsb",
+      "targets": [],
+      "value": "Ethereum"
+    }]
+  }],
+  "suites": [{
+    "id": "5f2cd0d6-2d27-4a2f-9b76-a0924d7e4011",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["305b49f3-9ccc-437d-945e-7040d210aeaa"]
+  }],
+  "urls": ["https://de.wikipedia.org/"],
+  "plugins": []
+}
